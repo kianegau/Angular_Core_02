@@ -1,0 +1,23 @@
+<h1>Todo App</h1>
+<app-input (handlePressEnter) = "handleInput($event)"></app-input>
+<app-list [dataList] = "data" (listPressDelete) = "appHanldeDelete($event)" (listPressComplete) = "appHandleComplete($event)"></app-list>
+
+
+<div>
+  <input type="radio" name="abc" (click) = "color = 'red'"> Red
+  <input type="radio" name="abc" (click) = "color = 'green'" > Green
+  <input type="radio" name="abc" (click) = "color = 'cyan'" > Cyan
+</div>
+<p  [appHighlight] = "color">Hightlight with {{color}}!</p>
+<p  [appHighlight] = "color" defaultColor = "violet">Hightlight too!</p>
+
+<div class="dropdown">
+<p appDropDown>Hover me now!</p>
+  <div>
+ <ul>
+   <li>List 1</li>
+   <li>List 2</li>
+   <li>List 3</li>
+ </ul>
+  </div>
+</div>

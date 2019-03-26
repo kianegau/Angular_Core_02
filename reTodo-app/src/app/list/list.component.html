@@ -1,0 +1,7 @@
+<div>
+  <ul *ngFor="let value of dataList">
+      <li>
+          <app-item [ItemValue] = "value" (handlePressDelete) = "listDelete($event)" (handlePressComplete) = "listComplete($event)"></app-item>
+      </li>
+  </ul>
+</div>

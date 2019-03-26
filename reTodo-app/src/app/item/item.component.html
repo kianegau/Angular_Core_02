@@ -1,0 +1,7 @@
+<p>
+  <span [ngClass]="{'itemValue': checkComplete(ItemValue.isCompleted)}">
+  {{ItemValue.name}}
+  </span>
+  <button (click) = "handleComplete(ItemValue.id)">Completed</button>
+  <button (click) = "handleDelete(ItemValue.id)">Delete</button>
+  </p>
